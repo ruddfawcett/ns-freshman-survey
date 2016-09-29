@@ -1,14 +1,20 @@
 $(function () {
-  $('#middle-school .exeter.type').highcharts({
+  $('#general .exeter.religion').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Public',
-        'Private',
-        'Homeschool'
+        'Agnosticism',
+        'Atheism',
+        'Buddhism',
+        'Catholicism',
+        'Hinduism',
+        'Islam',
+        'Judaism',
+        'Mormonism',
+        'Protestantism'
       ]
     },
     yAxis: {
@@ -20,14 +26,13 @@ $(function () {
       }
     },
     title: {
-      text: 'What type of middle school did you graduate from?'
+      text: 'With which religion or belief system do you identify?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      // data: [72, 85]
-      data: [60.40, 38.26, 2],
+      data: [15.38, 24.85, 2.37, 30.18, 3.55, 1.78, 5.33, 0, 16.57],
       showInLegend: false
     }]
   });

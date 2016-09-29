@@ -1,14 +1,16 @@
 $(function () {
-  $('#middle-school .exeter.type').highcharts({
+  $('#middle-school .exeter.performance').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
-        'Public',
-        'Private',
-        'Homeschool'
+        'Very Good',
+        'Good',
+        'Neutral',
+        'Poor',
+        'Very Poor'
       ]
     },
     yAxis: {
@@ -20,14 +22,13 @@ $(function () {
       }
     },
     title: {
-      text: 'What type of middle school did you graduate from?'
+      text: 'How would you define your academic performance in middle school?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      // data: [72, 85]
-      data: [60.40, 38.26, 2],
+      data: [81.21,16.11, 1.34, 1.34,0,],
       showInLegend: false
     }]
   });

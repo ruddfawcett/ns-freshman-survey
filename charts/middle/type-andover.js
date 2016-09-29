@@ -1,5 +1,6 @@
 $(function () {
-  $('#middle-school .chart.type-andover').highcharts({
+  $('#middle-school .andover.type').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
@@ -8,25 +9,26 @@ $(function () {
         'Public',
         'Private',
         'Homeschool'
-      ],
-      labels: {
-        rotation: -90,
-      }
+      ]
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'What type of middle school did you graduate from?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        data: [73, 96, 0]
-      }
-    ]
+    series: [{
+      // data: [72, 85]
+      data: [43.20, 56.80, 0],
+      showInLegend: false
+    }]
   });
 });

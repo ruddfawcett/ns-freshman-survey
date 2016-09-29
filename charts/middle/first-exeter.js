@@ -1,5 +1,5 @@
 $(function () {
-  $('#middle-school .chart.first-exeter').highcharts({
+  $('#middle-school .exeter.first').highcharts({
     chart: {
       type: 'bar'
     },

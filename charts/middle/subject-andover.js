@@ -1,7 +1,8 @@
 $(function () {
-  $('#middle-school .chart.subject-andover').highcharts({
+  $('#middle-school .andover.subject').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
@@ -15,24 +16,27 @@ $(function () {
         'Philosophy and Religious Studies',
         'Theatre and Dance',
         'World Languages'
-      ],
-      labels: {
-        rotation: -90,
-      }
+      ]
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'What is your favorite subject?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [
       {
-        data: [7, 25, 28, 54, 3, 26, 5, 3, 10, 8]
+        // data: [7, 25, 28, 54, 3, 26, 5, 3, 10, 8]
+        data: [4.14, 14.97, 16.57, 31.95, 1.78, 15.38, 2.96, 1.78, 5.92, 4.73],
+        showInLegend: false
       }
     ]
   });

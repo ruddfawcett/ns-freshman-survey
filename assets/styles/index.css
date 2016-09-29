@@ -11,21 +11,21 @@ html, body {
 }
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
 }
 
 .wrapper header {
-  background: url(../images/cover-green.png) no-repeat center center;
+  background: url(../images/cover-blue.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 550px;
+  height: 600px;
   position: relative;
 }
 
 .wrapper header main {
   text-align: center;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.9);
   margin: 0 auto;
   text-transform: uppercase;
   word-spacing: 3px;
@@ -49,7 +49,7 @@ body {
 
 .wrapper header nav {
   width: 100%;
-  background-color: #153628; // #3D9970;
+  background-color: #001F3F;
   height: 60px;
   box-sizing: border-box;
   bottom: 0;
@@ -65,9 +65,9 @@ body {
 
 .wrapper header nav ul a {
   float: left;
-  color: #3D9970; // #153628;
+  color: #7FBFFF;
   text-transform: uppercase;
-  width: 16.5%;
+  width: 16.6%;
   text-decoration: none;
   max-height: 60px;
   cursor: pointer;
@@ -98,59 +98,45 @@ body {
 }
 
 .wrapper header nav ul a:hover {
-  background-color: #2F5042;
+  background-color: #1A3959;
 }
 
 .wrapper article {
-  /*border-bottom: 1px solid #494949;*/
-  margin: 50px auto 75px auto;
+  margin: 75px auto 75px auto;
   padding: 0 10%;
+  border-bottom: 1px dotted #001F3F;
+  padding-bottom: 50px;
 }
 
 .wrapper article h1 {
   margin-bottom: 1px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #153628;
+  color: #001F3F;
 }
 
 .wrapper article .content {
-  /*-webkit-columns: 3;*/
-  /*-moz-columns: 3;*/
-  /*columns: 3;*/
   font-family: 'Open Sans', sans-serif;
-  /*font-family: serif;*/
-  color #153628;
+  color #001F3F;
 }
 
 .wrapper article p {
   margin-bottom: 20px;
-  /*text-indent: 20px;*/
-}
-
-.wrapper article p:first-child::first-letter {
-  float: left;
-  color: black;
-  font-size: 50px;
-  line-height: 40px;
-  padding-top: 4px;
-  padding-right: 3px;
-  padding-left: 3px;
-  font-family: Georgia;
 }
 
 .wrapper section {
   margin: 0 auto;
-  padding: 30px 10% 60px 10%;
+  padding: 75px 10% 75px 10%;
   background-color: #FAFAFA;
+  border-bottom: 1px dotted #001F3F;
 }
 
 .wrapper section {
-  background-color: white;
+  background-color: #fff;
 }
 
 .wrapper section {
-  color: #494949;
+  color: #001F3F;
 }
 
 .wrapper section h1 {
@@ -158,11 +144,16 @@ body {
   letter-spacing: 3px;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 25px 0 15px 0;
+  margin: 25px 0 35px 0;
+  color: #001F3F;
 }
 
 .wrapper section p {
   margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  overflow: auto;
+  clear: both;
 }
 
 .wrapper section .content {
@@ -170,23 +161,16 @@ body {
   overflow: auto;
 }
 
-.wrapper section .content .left,.right {
+.wrapper section .content .chart {
   width: 47%;
   float: left;
-}
-
-.wrapper section .content .left {
   padding-right: 3%;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
-.wrapper section .content .right {
-  padding-left: 3%;
-}
-
-.wrapper section .chart {
-  margin-bottom: 20px;
-  /*border-bottom: 1px dotted #949494;*/
-  padding-bottom: 20px;
+.wrapper section .content .chart.full {
+  width: 100%;
 }
 
 .toggle {
@@ -207,9 +191,19 @@ body {
 }
 
 .toggle a:first-child.active {
-  color: #0990E7;
+  color: #65B9FC;
 }
 
 .toggle a:last-child.active {
   color: #E83738;
+}
+
+article p:first-child::first-letter, section h1 + p::first-letter {
+  float: left;
+  color: #001F3F;
+  font-size: 50px;
+  line-height: 40px;
+  padding-top: 4px;
+  padding-right: 4px;
+  font-family: Georgia;
 }

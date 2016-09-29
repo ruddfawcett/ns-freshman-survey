@@ -1,17 +1,17 @@
 $(function () {
-  $('#school .andover.legacy').highcharts({
+  $('#middle-school .andover.performance').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
-        'Yes',
-        'No'
-      ],
-      labels: {
-        rotation: -90,
-      }
+        'Very Good',
+        'Good',
+        'Neutral',
+        'Poor',
+        'Very Poor'
+      ]
     },
     yAxis: {
       max: 100
@@ -22,13 +22,13 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Exeter before applying?'
+      text: 'How would you define your academic performance in middle school?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      data: [31.36, 68.64],
+      data: [83.43, 16.57, 0,0,0,],
       showInLegend: false
     }]
   });

@@ -23,10 +23,8 @@ $(function () {
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        data: [60, 99, 10]
-      }
-    ]
+    series: [{
+      data: [35.5, 58.58, 5.92]
+    }]
   });
 });

@@ -1,17 +1,14 @@
 $(function () {
-  $('#school .andover.legacy').highcharts({
+  $('#general .andover.aid').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
         'Yes',
         'No'
-      ],
-      labels: {
-        rotation: -90,
-      }
+      ]
     },
     yAxis: {
       max: 100
@@ -22,13 +19,13 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Exeter before applying?'
+      text: 'Are you on any form of financial aid?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      data: [31.36, 68.64],
+      data: [46.75, 53.25],
       showInLegend: false
     }]
   });

@@ -1,5 +1,6 @@
 $(function () {
-  $('#middle-school .chart.legacy-andover').highcharts({
+  $('#school .exeter.legacy').highcharts({
+    colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'bar'
     },
@@ -12,20 +13,23 @@ $(function () {
         rotation: -90,
       }
     },
+    yAxis: {
+      max: 100
+    },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'Did you visit Andover before applying?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        data: [52, 105]
-      }
-    ]
+    series: [{
+      data: [33.56, 66.44],
+      showInLegend: false
+    }]
   });
 });

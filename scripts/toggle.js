@@ -1,6 +1,6 @@
 $(function() {
-  $.each($('.chart'), function(index, chart) {
-    if (index%3 == 0) {
+  $.each($('.chart:not(.full.no-toggle)'), function(index, chart) {
+    if (index%2 == 0) {
       $(this).find('.exeter').hide();
     }
     else {
@@ -8,7 +8,7 @@ $(function() {
     }
   });
   $.each($('.toggle'), function(index, button) {
-    if (index%3 == 0) {
+    if (index%2 == 0) {
       $(this).html("<a class='active' data-school='a'>Andover</a><a data-school='e'>Exeter</a>");
     }
     else {

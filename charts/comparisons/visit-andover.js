@@ -23,7 +23,7 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Exeter?'
+      text: 'Did you visit Exeter before applying?'
     },
     tooltip: {
       formatter: columnToolTipFormatter

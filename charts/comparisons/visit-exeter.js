@@ -22,7 +22,7 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Andover?'
+      text: 'Did you visit Andover before applying?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
