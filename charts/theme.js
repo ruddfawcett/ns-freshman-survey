@@ -1,10 +1,11 @@
 Highcharts.theme = {
   // colors: ['#505050', '#646464', '#787878', '#8C8C8C', '#B4B4B4', '#C8C8C8', '#DCDCDC', '#F0F0F0'],
   colors: ['#F0F0F0', '#C8C8C8', '#8C8C8C', '#787878', '#646464', '#505050'],
+  // colors: ['#003160', '#842628'],
   chart: {
     backgroundColor: null,
     style: {
-      fontFamily: "'Source Sans Pro', sans-serif"
+      fontFamily: "'Lato', sans-serif"
     }
   },
   plotOptions: {
@@ -13,7 +14,7 @@ Highcharts.theme = {
       dataLabels: {
         enabled: false,
         style: {
-          color: 'white',
+          color: '#474747',
           textShadow: false
         },
         formatter: dataLabelFormatter
@@ -29,56 +30,59 @@ Highcharts.theme = {
   title: {
     text: null,
     style: {
-      color: 'white'
+      color: '#949494',
+      fontWeight: '700',
+      fontSize: '16px',
+      textTransform: 'uppercase'
     }
   },
   subtitle: {
     text: null,
     style: {
-      color: 'white'
+      color: '#474747'
     }
   },
   xAxis: {
-    gridLineColor: 'rgba(255, 255, 255, 0.2)',
+    gridLineColor: 'rgba(0, 0, 0, 0.1)',
     gridLineWidth: 1,
     style: {
-      color: 'white'
+      color: '#474747'
     },
     title: {
       text: null,
       style: {
-        color: 'white'
+        color: '#474747'
       }
     },
     labels: {
       style: {
-        color: 'white'
+        color: '#474747'
       }
     }
   },
   yAxis: {
-    gridLineColor: 'rgba(255, 255, 255, 0.2)',
+    gridLineColor: 'rgba(0, 0, 0, 0.1)',
     gridLineWidth: 1,
     reversedStacks: false,
     style: {
-      color: 'white'
+      color: '#474747'
     },
     title: {
       text: '',
       style: {
-        color: 'white'
+        color: '#474747'
       }
     },
     labels: {
       style: {
-        color: 'white'
+        color: '#474747'
       }
     }
   },
   legend: {
     align: 'center',
     itemStyle: {
-      color: 'white',
+      color: '#474747',
       fontWeight: 'normal'
     },
     verticalAlign: 'bottom',
