@@ -1,5 +1,10 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
-  // exeter social
   $('#perceptions .exeter.self-perception-social').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
@@ -26,12 +31,9 @@ $(function () {
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        // data: [98, 58, 1]
-        data: [62.42, 36.94, 0.64],
-        showInLegend: false
-      }
-    ]
+    series: [{
+      data: [62.42, 36.94, 0.64],
+      showInLegend: false
+    }]
   });
 });

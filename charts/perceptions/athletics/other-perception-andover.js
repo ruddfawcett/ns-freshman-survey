@@ -1,5 +1,10 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
-  // exeter athletic
   $('#perceptions .andover.other-perception-athletic').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
@@ -26,12 +31,9 @@ $(function () {
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        // data: [25, 95, 49]
-        data: [14.79, 56.21, 28.99],
-        showInLegend: false
-      }
-    ]
+    series: [{
+      data: [14.79, 56.21, 28.99],
+      showInLegend: false
+    }]
   });
 });

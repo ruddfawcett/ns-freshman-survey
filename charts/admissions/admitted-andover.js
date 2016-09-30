@@ -1,5 +1,10 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
-  // Did you get into Exeter?
   $('#admissions .andover.admitted').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
@@ -30,7 +35,6 @@ $(function () {
     series: [{
       data: [16.57, 32.54, 2.37, 48.52],
       showInLegend: false
-      // data: [28, 55, 4, 82]
     }]
   });
 });

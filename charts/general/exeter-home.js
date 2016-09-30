@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
   $('#general .exeter.home').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
@@ -30,9 +36,8 @@ $(function () {
       formatter: columnToolTipFormatter
     },
     series: [{
-        data: [65.10, 8.72, 6.04, 4.03, 10.07, 1.34, 4.70],
-        showInLegend: false
-      }
-    ]
+      data: [65.10, 8.72, 6.04, 4.03, 10.07, 1.34, 4.70],
+      showInLegend: false
+    }]
   });
 });

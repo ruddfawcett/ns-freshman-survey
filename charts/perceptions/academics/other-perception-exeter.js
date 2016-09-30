@@ -1,5 +1,10 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
-  // andover acadmic
   $('#perceptions .exeter.other-perception-academic').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
@@ -10,7 +15,7 @@ $(function () {
         'Very<br />academically-oriented',
         'Somewhat<br />academically-oriented',
         'Not very<br />academically-oriented'
-      ],
+      ]
     },
     yAxis: {
       max: 100
@@ -26,12 +31,9 @@ $(function () {
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        // data: [54, 85, 18],
-        showInLegend: false,
-        data: [34.39, 54.14, 11.46]
-      }
-    ]
+    series: [{
+      showInLegend: false,
+      data: [34.39, 54.14, 11.46]
+    }]
   });
 });

@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans';
 
 * {
@@ -211,7 +217,7 @@ article p:first-child::first-letter, section h1 + p::first-letter {
 footer {
   background-color: #eee;
   color: #BBBBBB;
-  padding: 30px 10%;
+  padding: 30px 5%;
 }
 
 footer h1 {

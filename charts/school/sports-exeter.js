@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
   $('#middle-school .chart.sports-exeter').highcharts({
     chart: {
@@ -24,10 +30,8 @@ $(function () {
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        data: [45, 70, 29, 13]
-      }
-    ]
+    series: [{
+      data: [45, 70, 29, 13]
+    }]
   });
 });

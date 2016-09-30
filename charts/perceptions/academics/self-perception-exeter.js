@@ -1,8 +1,12 @@
+/**
+ * Copyright (c) 2016 Non Sibi Press
+ * Cite Non Sibi Press if using any information from this survey.
+ *
+ * This project is open source at https://github.com/nonsibipress.
+ */
 $(function () {
-  // Exeter acadmic
   $('#perceptions .exeter.self-perception-academic').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
-    // colors: ['#580306', '#C70A14', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'bar'
     },
@@ -30,7 +34,6 @@ $(function () {
     series: [{
       data: [76.43, 22.92, 0.64],
       showInLegend: false
-      // data: [120, 36, 1]
     }]
   });
 });
