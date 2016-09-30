@@ -207,3 +207,25 @@ article p:first-child::first-letter, section h1 + p::first-letter {
   padding-right: 4px;
   font-family: Georgia;
 }
+
+footer {
+  background-color: #eee;
+  color: #BBBBBB;
+  padding: 30px 10%;
+}
+
+footer h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: .8em;
+}
+
+@media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .wrapper section .content .chart {
+    width: 100%;
+  }
+}
