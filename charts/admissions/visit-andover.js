@@ -1,6 +1,7 @@
 $(function () {
-  $('#comparisons .exeter.visit').highcharts({
-    colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
+  // Did you visit Exeter?
+  $('#admissions .andover.visit').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
@@ -22,14 +23,14 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Andover before applying?'
+      text: 'Did you visit Exeter before applying?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      // data: [72, 85]
-      data: [45.64, 54.36],
+      // data: [90, 79]
+      data: [53.25, 46.75],
       showInLegend: false
     }]
   });

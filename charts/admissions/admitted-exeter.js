@@ -1,6 +1,6 @@
 $(function () {
   // Did you get into Andover?
-  $('#comparisons .exeter.admitted').highcharts({
+  $('#admissions .exeter.admitted').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'column'

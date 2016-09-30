@@ -1,18 +1,18 @@
 $(function () {
-  // Did you visit Exeter?
-  $('#comparisons .andover.visit').highcharts({
+  $('#academics .andover.prioritize').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Yes',
-        'No'
-      ],
-      labels: {
-        rotation: -90,
-      }
+        'Academics',
+        'Athletics',
+        'Extracurriculars',
+        'Family',
+        'Social life',
+        'Faith or religion'
+      ]
     },
     yAxis: {
       max: 100
@@ -23,14 +23,13 @@ $(function () {
       }
     },
     title: {
-      text: 'Did you visit Exeter before applying?'
+      text: 'What do you prioritize most in your life right now?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [{
-      // data: [90, 79]
-      data: [53.25, 46.75],
+      data: [65.68, 2.37, 5.33, 14.79, 10.65, 1.18],
       showInLegend: false
     }]
   });

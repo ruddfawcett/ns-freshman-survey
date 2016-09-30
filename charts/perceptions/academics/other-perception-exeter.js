@@ -1,26 +1,27 @@
 $(function () {
   // andover acadmic
-  $('#comparisons .chart.other-perception-academic-exeter').highcharts({
-    // colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
+  $('#perceptions .exeter.other-perception-academic').highcharts({
+    colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Very academically-oriented',
-        'Somewhat academically-oriented',
-        'Not very academically-oriented'
+        'Very<br />academically-oriented',
+        'Somewhat<br />academically-oriented',
+        'Not very<br />academically-oriented'
       ],
-      labels: {
-        rotation: -90,
-      }
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'Perception of students at Andover is that they are...'
     },
     tooltip: {
       formatter: columnToolTipFormatter

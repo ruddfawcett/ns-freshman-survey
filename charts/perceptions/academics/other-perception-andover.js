@@ -1,25 +1,27 @@
 $(function () {
   // exeter acadmic
-  $('#comparisons .chart.other-perception-academic-andover').highcharts({
+  $('#perceptions .andover.other-perception-academic').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Very academically-oriented',
-        'Somewhat academically-oriented',
-        'Not very academically-oriented'
+        'Very<br />academically-oriented',
+        'Somewhat<br />academically-oriented',
+        'Not very<br />academically-oriented'
       ],
-      labels: {
-        rotation: -90,
-      }
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'Perception of students at Exeter is that they are...'
     },
     tooltip: {
       formatter: columnToolTipFormatter
@@ -27,8 +29,8 @@ $(function () {
     series: [
       {
         // data: [125, 36, 8]
-        showInLegend: false,
-        data: [73.96, 21.30, 4.73]
+        data: [73.96, 21.30, 4.73],
+        showInLegend: false
       }
     ]
   });

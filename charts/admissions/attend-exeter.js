@@ -1,14 +1,14 @@
 $(function () {
-  // Did you apply to Andover?
-  $('#comparisons .exeter.apply').highcharts({
+  $('#admissions .exeter.attend').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
-      type: 'column'
+      type: 'bar'
     },
     xAxis: {
       categories: [
         'Yes',
-        'No'
+        'No',
+        'Not applicable'
       ]
     },
     yAxis: {
@@ -23,11 +23,11 @@ $(function () {
       formatter: columnToolTipFormatter
     },
     title: {
-      text: 'Did you apply to Andover?'
+      text: 'Would you have attended Andover if admitted?'
     },
     series: [{
       // data: [73, 84]
-      data: [46.31, 53.69],
+      data: [4.7, 46.31, 48.99],
       showInLegend: false
     }]
   });

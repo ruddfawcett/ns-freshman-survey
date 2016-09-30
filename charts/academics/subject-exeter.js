@@ -1,5 +1,5 @@
 $(function () {
-  $('#middle-school .exeter.subject').highcharts({
+  $('#academics .exeter.subject').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'column'

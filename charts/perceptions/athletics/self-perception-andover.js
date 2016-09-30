@@ -1,33 +1,36 @@
 $(function () {
   // andover athletic
-  $('#comparisons .chart.self-perception-athletics-andover').highcharts({
+  $('#perceptions .andover.self-perception-athletic').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Very athletically-oriented',
-        'Somewhat athletically-oriented',
-        'Not very athletically-oriented'
+        'Very<br />athletically-oriented',
+        'Somewhat<br />athletically-oriented',
+        'Not very<br />athletically-oriented'
       ],
-      labels: {
-        rotation: -90,
-      }
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'Perception of students at Andover is that they are...'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [
       {
-        data: [75, 92, 2]
-        // data: [43.38, 54.44, 1.18]
+        // data: [75, 92, 2]
+        data: [43.38, 54.44, 1.18],
+        showInLegend: false
       }
     ]
   });

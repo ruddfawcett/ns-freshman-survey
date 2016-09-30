@@ -1,6 +1,6 @@
 $(function () {
   // Did you get into Exeter?
-  $('#comparisons .andover.admitted').highcharts({
+  $('#admissions .andover.admitted').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'column'

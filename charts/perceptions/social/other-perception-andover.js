@@ -1,33 +1,36 @@
 $(function () {
   // exeter social
-  $('#comparisons .chart.other-perception-social-andover').highcharts({
+  $('#perceptions .andover.other-perception-social').highcharts({
+    colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
       type: 'bar'
     },
     xAxis: {
       categories: [
-        'Very socially-oriented',
-        'Somewhat socially-oriented',
-        'Not very socially-oriented'
+        'Very<br />socially-oriented',
+        'Somewhat<br />socially-oriented',
+        'Not very<br />socially-oriented'
       ],
-      labels: {
-        rotation: -90,
-      }
+    },
+    yAxis: {
+      max: 100
     },
     plotOptions: {
       series: {
-        dataLabels: {
-          enabled: false
-        }
+        colorByPoint: true
       }
+    },
+    title: {
+      text: 'Perception of students at Exeter is that they are...'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
     series: [
       {
-        data: [13, 87, 69]
-        // data: [7.69, 51.48, 40.83]
+        // data: [13, 87, 69]
+        data: [7.69, 51.48, 40.83],
+        showInLegend: false
       }
     ]
   });

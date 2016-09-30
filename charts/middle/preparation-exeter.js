@@ -1,13 +1,14 @@
 $(function () {
-  $('#middle-school .exeter.first').highcharts({
+  $('#middle-school .exeter.preparation').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
-        'Yes',
-        'No'
+        'Prepared',
+        'Neutral',
+        'Unprepared'
       ],
     },
     yAxis: {
@@ -19,17 +20,14 @@ $(function () {
       }
     },
     title: {
-      text: 'Are you the first in your family to attend a private preparatory school?'
+      text: 'How prepared do you feel you are for Exeter?'
     },
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    series: [
-      {
-        // data: [70, 87]
-        data: [44.97, 55.03],
-        showInLegend: false
-      }
-    ]
+    series: [{
+      data: [54.36, 40.94, 4.7],
+      showInLegend: false
+    }]
   });
 });

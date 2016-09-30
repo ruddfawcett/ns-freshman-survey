@@ -1,15 +1,15 @@
 $(function () {
-  $('#comparisons .andover.attend').highcharts({
+  $('#middle-school .andover.preparation').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
-      type: 'bar'
+      type: 'column'
     },
     xAxis: {
       categories: [
-        'Yes',
-        'No',
-        'Not applicable'
-      ]
+        'Prepared',
+        'Neutral',
+        'Unprepared'
+      ],
     },
     yAxis: {
       max: 100
@@ -19,15 +19,14 @@ $(function () {
         colorByPoint: true
       }
     },
+    title: {
+      text: 'How prepared do you feel you are for Andover?'
+    },
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    title: {
-      text: 'Would you have attended Exeter if admitted?'
-    },
     series: [{
-      // data: [73, 84]
-      data: [3.55, 40.83, 55.62],
+      data: [35.5, 58.58, 5.92],
       showInLegend: false
     }]
   });

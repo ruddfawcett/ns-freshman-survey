@@ -1,14 +1,14 @@
 $(function () {
-  // Did you apply to Exeter?
-  $('#comparisons .andover.apply').highcharts({
+  $('#admissions .andover.attend').highcharts({
     colors: ['#082B55', '#125AB2', '#178DE7', '#65B9FC', '#ABDCFD'],
     chart: {
-      type: 'column'
+      type: 'bar'
     },
     xAxis: {
       categories: [
         'Yes',
-        'No'
+        'No',
+        'Not applicable'
       ]
     },
     yAxis: {
@@ -23,11 +23,11 @@ $(function () {
       formatter: columnToolTipFormatter
     },
     title: {
-      text: 'Did you apply to Exeter?'
+      text: 'Would you have attended Exeter if admitted?'
     },
     series: [{
-      // data: [86, 83],
-      data: [50.89, 49.11],
+      // data: [73, 84]
+      data: [3.55, 40.83, 55.62],
       showInLegend: false
     }]
   });

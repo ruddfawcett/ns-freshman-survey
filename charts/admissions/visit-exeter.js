@@ -1,5 +1,5 @@
 $(function () {
-  $('#comparisons .exeter.attend').highcharts({
+  $('#admissions .exeter.visit').highcharts({
     colors: ['#580306', '#870309', '#C70A14', '#E73035', '#FC6567', '#FDAEAF'],
     chart: {
       type: 'bar'
@@ -7,9 +7,11 @@ $(function () {
     xAxis: {
       categories: [
         'Yes',
-        'No',
-        'Not applicable'
-      ]
+        'No'
+      ],
+      labels: {
+        rotation: -90,
+      }
     },
     yAxis: {
       max: 100
@@ -19,15 +21,15 @@ $(function () {
         colorByPoint: true
       }
     },
+    title: {
+      text: 'Did you visit Andover before applying?'
+    },
     tooltip: {
       formatter: columnToolTipFormatter
     },
-    title: {
-      text: 'Would you have attended Andover if admitted?'
-    },
     series: [{
-      // data: [73, 84]
-      data: [4.7, 46.31, 48.99],
+      // data: [72, 85]
+      data: [45.64, 54.36],
       showInLegend: false
     }]
   });
